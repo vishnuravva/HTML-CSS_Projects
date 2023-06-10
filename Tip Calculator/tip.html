@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="fields">
+        <div class="billTotal">
+          <p>Bill Total</p>
+          <input onkeyup="calculateBill()" id='bill' type="text" class="billField" />
+        </div>
+        <div class="tip">
+          <p>Tip</p>
+          <input onkeyup="calculateBill()" id='tip' type="text" class="tipField" />
+        </div>
+      </div>
+
+      <div class="peopleAndTotal">
+        <h3>People</h3>
+        <h3>Total per Person</h3>
+    </div>
+    <div class="peopleAndTotalValues">
+        <div class="buttons">
+            <button id='dec' onClick='dec()' class="dec">-</button>
+            <h3 id='val' class="val">1</h3>
+            <button id='inc' onClick='inc()' class="inc">+</button>
+        </div>
+        <div class="total">
+            <h1 id="totalPer">$0.00</h1>
+        </div>
+    </div>
+
+        <!-- <div class="buttons">
+            <header>People</header>
+            <button class="dec">-</button>
+            <button class="inc">+</button>
+        </div>
+        </div>
+        <div class="perPersonTotal">
+            <header>Total per Person</header>
+            <h1>$0.00</h1>
+        </div> -->
+      <!-- </div> -->
+
+    </div>
+    <script src="tip.js"></script>
+  </body>
+</html>

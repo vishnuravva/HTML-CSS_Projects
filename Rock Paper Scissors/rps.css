@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    /* The first four properties are used to center div in perfect
+    middle of the page like from top*/
+    /* The translate() function takes two values: the first value represents the horizontal movement, and 
+    the second value represents the vertical movement. In our example, we are using -50% as both values, 
+    which moves the div element back by half of its own width and height.
+
+    When we use -50% as the value for both horizontal and vertical movement, we are essentially centering the div element both horizontally and vertically. 
+    This is because we are moving the div element back by half of its own width and height in both directions.
+
+    So the transform: translate(-50%, -50%) property is responsible for centering the div element both horizontally and vertically.*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border : 5px solid rebeccapurple;
+    border-radius: 10%;
+    background-color: rgba(158, 158, 208, 0.801);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height : 90vh;
+
+}
+ .rock, .paper, .scissor, .resetBtn{
+    font-size:50px;
+    background-color: #22222280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+button:hover{
+    
+    background-color: #222222ce;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    
+}
+.rpsDiv{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.resetDiv{
+    display: flex;
+    background-color: #2222227f;
+    /* margin : auto 30px; */
+    align-items: center;
+    justify-content: center;
+    margin-top : 30px;
+    border:none;
+    outline:none;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 75px;
+    height: 75px;
+}
+.scores{
+    padding: 10px;
+    margin: 50px auto;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    background-color: rgb(5, 4, 4);
+}
+.line{
+    border-bottom: 2px solid black;
+}
+.playerScores, .botScores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vsDiv{
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.winnerAndNewGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#startingNewGame{
+    font-size: 20px;
+}
