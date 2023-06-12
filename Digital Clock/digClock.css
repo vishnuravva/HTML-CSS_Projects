@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('night.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+h2{
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+} 
+.clock{
+    display: flex;
+}
+.clock div{
+    position: relative;
+    margin:5px;
+}
+.clock span{
+    width:100px;
+    height: 80px;
+    background-color: rgb(15, 15, 19);
+    opacity: 0.;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow:2px 2px 4px rgba(0,0,0,.3);
+
+}
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: .8;
+}
+.clock #ampm{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: grey;
+
+}
